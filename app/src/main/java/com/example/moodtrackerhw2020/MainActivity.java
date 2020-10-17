@@ -18,7 +18,11 @@ public class MainActivity extends AppCompatActivity {
         EditText userNameText = (EditText)findViewById(R.id.usernameField);
         String userName = userNameText.getText().toString();
         EditText passwordText = (EditText)findViewById(R.id.passwordField);
-        String password = userNameText.getText().toString();
+        String password = passwordText.getText().toString();
+        if(userName.equals("admin") && password.equals("admin")) {
+            Intent login = new Intent(this, HomeScreen.class);
+            startActivity(login);
+        }
     }
 
 }

@@ -48,5 +48,9 @@ public class HomeScreen extends AppCompatActivity {
         return result;
     }
 
+    public void submitEmotion() {
+
+    }
+
     
 }
