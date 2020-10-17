@@ -39,7 +39,7 @@ public class HomeScreen extends AppCompatActivity {
 
     /**
      * Gets the user's current happy rating
-     * @return the
+     * @return the happy rating
      */
     public int getHappyRating() {
         String text = happyScale.getSelectedItem().toString();

@@ -7,6 +7,7 @@
     <string name="emotion_happy">Happy</string>
     <string name="emotion_sad">Sad</string>
     <string name="emotion_tired">Tired</string>
+    <string name="string_submit">Submit</string>
 
     <string-array name="numbers">
         <item>1</item>
