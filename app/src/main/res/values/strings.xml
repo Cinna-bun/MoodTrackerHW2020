@@ -9,6 +9,7 @@
     <string name="emotion_tired">Tired</string>
     <string name="string_submit">Submit</string>
     <string name="emotion_stress">Stressed</string>
+    <string name="username_hint">Enter a Username:</string>
 
     <string-array name="numbers">
         <item>1</item>
