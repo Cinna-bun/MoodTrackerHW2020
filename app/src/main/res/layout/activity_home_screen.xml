@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="getEmotionType"
     tools:context=".HomeScreen">
 
     <TextView
@@ -24,13 +23,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="320dp"
-        android:text="@string/emotion_angry"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="188dp"
+        android:checked="false"
+        android:text="@string/emotion_happy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,32 +38,89 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="260dp"
         android:text="@string/emotion_sad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Spinner
+        android:id="@+id/tiredSpinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="392dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/sadSpinner"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="187dp"
-        android:checked="false"
-        android:text="@string/emotion_happy"
+        android:layout_marginTop="12dp"
+        android:text="@string/emotion_stress"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+        tools:layout_editor_absoluteX="108dp" />
+
+    <Spinner
+        android:id="@+id/stressSpinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox6"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <Spinner
+        android:id="@+id/angrySpinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="328dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="328dp"
+        android:text="@string/emotion_angry"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/happySpinner"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="396dp"
         android:text="@string/emotion_tired"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -76,44 +133,27 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="151dp" />
 
-    <Spinner
-        android:id="@+id/happySpinner"
-        android:layout_width="99dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="187dp"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="270dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="532dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLength="180"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/sadSpinner"
-        android:layout_width="102dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="252dp"
-        app:layout_constraintStart_toEndOf="@+id/checkBox2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Spinner
-        android:id="@+id/angrySpinner"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="322dp"
-        app:layout_constraintStart_toEndOf="@+id/checkBox3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Spinner
-        android:id="@+id/tiredSpinner"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="391dp"
-        app:layout_constraintStart_toEndOf="@+id/checkBox4"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitEmotion"
+        android:text="@string/string_submit"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="634dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

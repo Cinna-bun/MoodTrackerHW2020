@@ -15,6 +15,7 @@ public class HomeScreen extends AppCompatActivity {
     private Spinner sadScale;
     private Spinner angryScale;
     private Spinner tiredScale;
+    private Spinner stressScale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class HomeScreen extends AppCompatActivity {
         sadScale = (Spinner) findViewById(R.id.sadSpinner);
         angryScale = (Spinner) findViewById(R.id.angrySpinner);
         tiredScale = (Spinner) findViewById(R.id.tiredSpinner);
+        stressScale = (Spinner) findViewById(R.id.stressSpinner);
 
         //this activates the spinners above
         ArrayAdapter<String> numberRatingAdapter = new ArrayAdapter<String>(HomeScreen.this,
@@ -35,11 +37,12 @@ public class HomeScreen extends AppCompatActivity {
         sadScale.setAdapter(numberRatingAdapter);
         angryScale.setAdapter(numberRatingAdapter);
         tiredScale.setAdapter(numberRatingAdapter);
+        stressScale.setAdapter(numberRatingAdapter);
     }
 
     /**
      * Gets the user's current happy rating
-     * @return the
+     * @return the happy rating
      */
     public int getHappyRating() {
         String text = happyScale.getSelectedItem().toString();
