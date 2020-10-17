@@ -12,6 +12,8 @@ public abstract class Emotion {
         this.scale = scale;
     }
 
+    public abstract String getName();
+
     public String getDescription() {
         return description;
     }
