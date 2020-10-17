@@ -3,9 +3,10 @@ package com.example.moodtrackerhw2020;
 public class User {
 
     private String userName;
-    private String password;
+    private final String password;
 
-    public User(String userName) {
+    public User(String userName, String password) {
+        this.password = password;
         this.userName = userName;
     }
 
