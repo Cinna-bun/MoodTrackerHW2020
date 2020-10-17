@@ -19,6 +19,7 @@ public class HomeScreen extends AppCompatActivity {
         Spinner angryScale = (Spinner) findViewById(R.id.angrySpinner);
         Spinner tiredScale = (Spinner) findViewById(R.id.tiredSpinner);
 
+        //this activates the spinners above
         ArrayAdapter<String> numberRatingAdapter = new ArrayAdapter<String>(HomeScreen.this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.numbers));
         numberRatingAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
