@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">Mood Tracker HW2020</string>
+<<<<<<< Updated upstream
     <string name="enter_a_password">Enter a Password:</string>
+=======
+    <string name="emotion_angry">Angry</string>
+    <string name="emotion_happy">Happy</string>
+    <string name="emotion_sad">Sad</string>
+    <string name="emotion_tired">Tired</string>
+
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+>>>>>>> Stashed changes
 </resources>
