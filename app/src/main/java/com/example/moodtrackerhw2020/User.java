@@ -4,6 +4,13 @@ public class User {
 
     private String userName;
     private String password;
+    private String entryLog;
+
+    private Happy happy;
+    private Sad sad;
+    private Tired tired;
+    private Stressed stressed;
+    private Angry angry;
 
     public User(String userName) {
         this.userName = userName;
@@ -15,6 +22,54 @@ public class User {
 
     public boolean authenticate(String password) {
         return this.password.equals(password);
+    }
+
+    public String getEntryLog() {
+        return entryLog;
+    }
+
+    public void setEntryLog(String entryLog) {
+        this.entryLog = entryLog;
+    }
+
+    public Happy getHappy() {
+        return happy;
+    }
+
+    public void setHappy(Happy happy) {
+        this.happy = happy;
+    }
+
+    public Sad getSad() {
+        return sad;
+    }
+
+    public void setSad(Sad sad) {
+        this.sad = sad;
+    }
+
+    public Tired getTired() {
+        return tired;
+    }
+
+    public void setTired(Tired tired) {
+        this.tired = tired;
+    }
+
+    public Stressed getStressed() {
+        return stressed;
+    }
+
+    public void setStressed(Stressed stressed) {
+        this.stressed = stressed;
+    }
+
+    public Angry getAngry() {
+        return angry;
+    }
+
+    public void setAngry(Angry angry) {
+        this.angry = angry;
     }
 
     @Override
