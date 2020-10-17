@@ -79,7 +79,7 @@ public class HomeScreen extends AppCompatActivity {
         return result;
     }
 
-    public boolean isHappyChecked(View view) {
+    public boolean isHappyChecked() {
         CheckBox box = (CheckBox) findViewById(R.id.happyBox);
         return box.isChecked();
     }
