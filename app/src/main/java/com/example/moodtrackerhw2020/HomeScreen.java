@@ -42,13 +42,66 @@ public class HomeScreen extends AppCompatActivity {
 
     /**
      * Gets the user's current happy rating
-     * @return the happy rating
+     * @return the happy rating, or -1 if they have not selected anything
      */
     public int getHappyRating() {
         String text = happyScale.getSelectedItem().toString();
         int result = Integer.parseInt(text);
 
         return result;
+    }
+
+    public int getSadRating() {
+        String text = sadScale.getSelectedItem().toString();
+        int result = Integer.parseInt(text);
+
+        return result;
+    }
+
+    public int getAngerRating() {
+        String text = angryScale.getSelectedItem().toString();
+        int result = Integer.parseInt(text);
+
+        return result;
+    }
+
+    public int getTiredRating() {
+        String text = tiredScale.getSelectedItem().toString();
+        int result = Integer.parseInt(text);
+
+        return result;
+    }
+
+    public int getStressRating() {
+        String text = stressScale.getSelectedItem().toString();
+        int result = Integer.parseInt(text);
+
+        return result;
+    }
+
+    public boolean isHappyChecked(View view) {
+        CheckBox box = (CheckBox) findViewById(R.id.happyBox);
+        return box.isChecked();
+    }
+
+    public boolean isSadChecked() {
+        CheckBox box = (CheckBox) findViewById(R.id.sadBox);
+        return box.isChecked();
+    }
+
+    public boolean isAngerChecked() {
+        CheckBox box = (CheckBox) findViewById(R.id.angryBox);
+        return box.isChecked();
+    }
+
+    public boolean isTiredChecked() {
+        CheckBox box = (CheckBox) findViewById(R.id.tiredBox);
+        return box.isChecked();
+    }
+
+    public boolean isStressChecked() {
+        CheckBox box = (CheckBox) findViewById(R.id.stressBox);
+        return box.isChecked();
     }
 
     public void submitEmotion() {
