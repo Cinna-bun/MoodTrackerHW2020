@@ -15,14 +15,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void Ganesh(View view)
+    public void login(View view)
     {
         String button_text;
         button_text = ((Button)view).getText().toString();
-        if(button_text.equals("click second activity"))
+        if(button_text.equals("login"))
         {
-            Intent ganesh = new Intent(this,SignUpScreen.class);
-            startActivity(ganesh);
+            Intent login = new Intent(this, HomeScreen.class);
+            startActivity(login);
         }
     }
 }
