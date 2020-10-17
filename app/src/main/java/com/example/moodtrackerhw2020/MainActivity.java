@@ -15,12 +15,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void login(View view)
-    {
+    public void login(View view) {
         String button_text;
         button_text = ((Button)view).getText().toString();
-        if(button_text.equals("login"))
-        {
+        if(button_text.equals("login")) {
             Intent login = new Intent(this, HomeScreen.class);
             startActivity(login);
         }
