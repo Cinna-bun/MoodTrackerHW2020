@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "575102816726",
+    "firebase_url": "https://moodtracker-9ced5.firebaseio.com",
+    "project_id": "moodtracker-9ced5",
+    "storage_bucket": "moodtracker-9ced5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575102816726:android:c9c99bd8cdf93c0bc15477",
+        "android_client_info": {
+          "package_name": "com.example.moodtrackerhw2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575102816726-rasrvt3froo64612juf6ondgql67rock.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIdOGtJVOJ224CDGkclZN0Qw3Gg8U20F8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575102816726-rasrvt3froo64612juf6ondgql67rock.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
