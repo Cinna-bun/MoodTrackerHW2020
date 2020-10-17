@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -14,12 +15,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        String button_text;
-        button_text = ((Button)view).getText().toString();
-        if(button_text.equals("login")) {
-            Intent login = new Intent(this, HomeScreen.class);
-            startActivity(login);
-        }
+        EditText userNameText = (EditText)findViewById(R.id.usernameField);
+        String userName = userNameText.getText().toString();
+        EditText passwordText = (EditText)findViewById(R.id.passwordField);
+        String password = userNameText.getText().toString();
     }
 
 }
