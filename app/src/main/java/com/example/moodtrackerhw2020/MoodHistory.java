@@ -2,6 +2,7 @@ package com.example.moodtrackerhw2020;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -34,6 +35,11 @@ public class MoodHistory extends AppCompatActivity {
         }
 
         t.setText(sb.toString());
+    }
+
+    public void goBack(View view) {
+        Intent intent = new Intent(this, HomeScreen.class);
+        startActivity(intent);
     }
 
 
