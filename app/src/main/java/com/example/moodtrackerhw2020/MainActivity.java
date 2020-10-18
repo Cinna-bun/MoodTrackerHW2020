@@ -26,4 +26,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * PLEASE do not use this method it is only for decoration
+     */
+    private void tieShoes() {
+        System.out.println("Your shoes do be quite tight");
+        try {
+            wait(10000000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return;
+    }
+
 }
