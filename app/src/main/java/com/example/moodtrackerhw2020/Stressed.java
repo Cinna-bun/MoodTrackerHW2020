@@ -7,6 +7,7 @@ public class Stressed extends Emotion{
 
     public Stressed(boolean isStressed, int rating) {
         this.isStressed = isStressed;
+        if (rating < 1) rating = 1;
         this.rating = rating;
     }
 

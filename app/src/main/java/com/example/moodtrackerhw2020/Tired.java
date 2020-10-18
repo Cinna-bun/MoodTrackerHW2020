@@ -7,6 +7,7 @@ public class Tired extends Emotion{
 
     public Tired(boolean isTired, int rating) {
         this.isTired = isTired;
+        if (rating < 1) rating = 1;
         this.rating = rating;
     }
 

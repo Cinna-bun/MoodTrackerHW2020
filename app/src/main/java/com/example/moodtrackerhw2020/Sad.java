@@ -7,6 +7,7 @@ public class Sad extends Emotion{
 
     public Sad(boolean isSad, int rating) {
         this.isSad = isSad;
+        if (rating < 1) rating = 1;
         this.rating = rating;
     }
 
