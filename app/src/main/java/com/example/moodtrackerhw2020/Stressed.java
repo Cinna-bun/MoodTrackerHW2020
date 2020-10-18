@@ -11,6 +11,10 @@ public class Stressed extends Emotion{
         this.rating = rating;
     }
 
+    public int getRating() {
+        return rating;
+    }
+
     public String getName() {
         return name;
     }
