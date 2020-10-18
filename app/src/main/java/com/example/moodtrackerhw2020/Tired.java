@@ -1,6 +1,6 @@
 package com.example.moodtrackerhw2020;
 
-public class Tired extends Emotion{
+public class Tired extends Emotion {
     private final String name = "Tired";
     private int rating;
     private boolean isTired;
