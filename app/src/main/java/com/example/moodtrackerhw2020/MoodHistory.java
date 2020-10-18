@@ -22,6 +22,8 @@ public class MoodHistory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mood_history);
 
+        moodHistory = new ArrayList<>();
+
         load();
 
         TextView t = (TextView) findViewById(R.id.moodHistoryView);

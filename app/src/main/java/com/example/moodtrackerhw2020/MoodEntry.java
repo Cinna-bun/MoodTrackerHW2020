@@ -82,6 +82,7 @@ public class MoodEntry {
         sb.append("\n" + desc);
 
         sb.append("\n");
+        sb.append("\n");
 
         return sb.toString();
     }
