@@ -132,11 +132,11 @@ public class HomeScreen extends AppCompatActivity {
     public void submitEmotion(View view) {
         StringBuilder line = new StringBuilder();
 
-        String happy = "happy:" + isHappyChecked() + ":" + getHappyRating() + ",";
-        String anger = "anger:" + isAngerChecked() + ":" + getAngerRating() + ",";
-        String sad = "sad:" + isSadChecked() + ":" + getSadRating() + ",";
-        String tired = "tired:" + isTiredChecked() + ":" + getTiredRating() + ",";
-        String stress = "stress:" + isStressChecked() + ":" + getStressRating() + ",";
+        String happy = "happy:" + isHappyChecked() + ";" + getHappyRating() + ",";
+        String anger = "anger:" + isAngerChecked() + ";" + getAngerRating() + ",";
+        String sad = "sad:" + isSadChecked() + ";" + getSadRating() + ",";
+        String tired = "tired:" + isTiredChecked() + ";" + getTiredRating() + ",";
+        String stress = "stress:" + isStressChecked() + ";" + getStressRating() + ",";
         TextView description = (TextView) findViewById(R.id.editTextTextMultiLine);
         String desc = description.getText().toString().trim();
 
@@ -161,7 +161,6 @@ public class HomeScreen extends AppCompatActivity {
             fos = openFileOutput(FILE_NAME, MODE_APPEND | MODE_PRIVATE);
             pw = new PrintWriter(fos);
             pw.println(data);
-            System.out.println("I'm writing!");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } finally {

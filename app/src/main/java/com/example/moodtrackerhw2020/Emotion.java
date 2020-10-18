@@ -1,14 +1,14 @@
 package com.example.moodtrackerhw2020;
 
 public abstract class Emotion {
-    private int scale;
+    private int rating;
 
-    public int getScale() {
-        return scale;
+    public int getRating() {
+        return rating;
     }
 
     public void setScale(int scale) {
-        this.scale = scale;
+        this.rating = scale;
     }
 
     public abstract String getName();

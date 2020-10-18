@@ -10,6 +10,7 @@
     <string name="string_submit">Submit</string>
     <string name="emotion_stress">Stressed</string>
     <string name="username_hint">Enter a Username:</string>
+    <string name="mood_history">Your Mood History</string>
 
     <string-array name="numbers">
         <item>1</item>
