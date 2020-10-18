@@ -2,6 +2,8 @@ package com.example.moodtrackerhw2020;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -26,6 +28,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class HomeScreen extends AppCompatActivity {
     //TODO make fields for the four emotions
@@ -134,14 +138,20 @@ public class HomeScreen extends AppCompatActivity {
         String tired = "tired:" + isTiredChecked() + ":" + getTiredRating() + ",";
         String stress = "stress:" + isStressChecked() + ":" + getStressRating() + ",";
         TextView description = (TextView) findViewById(R.id.editTextTextMultiLine);
-        String d = description.getText().toString().trim();
+        String desc = description.getText().toString().trim();
 
         line.append(happy);
         line.append(anger);
         line.append(sad);
         line.append(tired);
         line.append(stress);
-        line.append(d);
+
+
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        line.append(formatter.format(date) + ",");
+        line.append(desc);
+
         String data = line.toString();
 
         FileOutputStream fos = null;
@@ -159,6 +169,9 @@ public class HomeScreen extends AppCompatActivity {
                 pw.close();
             }
         }
+
+        Intent intent = new Intent(this, MoodHistory.class);
+        startActivity(intent);
     }
 
 
