@@ -46,12 +46,12 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="332dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="116dp"
-        android:text="Welcome to {APP}"
+        android:layout_width="381dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="104dp"
+        android:text="Welcome to Mood Motivator"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
